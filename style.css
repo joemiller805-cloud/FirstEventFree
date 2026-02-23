@@ -144,3 +144,14 @@ footer {
   background:#18e0c4;
   box-shadow:0 0 18px rgba(24,224,196,.55);
 }
+/* ===== HERO SPACING TIGHTEN ===== */
+
+.hero{
+  padding-top:70px !important;
+  padding-bottom:70px !important;
+}
+
+.hero-grid{
+  align-items:center;
+  gap:36px;
+}
