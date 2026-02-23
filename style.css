@@ -124,3 +124,23 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+.power-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin-top:14px;
+  padding:8px 12px;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:999px;
+  font-size:13px;
+  color:rgba(255,255,255,.9);
+  background:rgba(0,0,0,.18);
+}
+
+.power-dot{
+  width:10px;
+  height:10px;
+  border-radius:999px;
+  background:#18e0c4;
+  box-shadow:0 0 18px rgba(24,224,196,.55);
+}
