@@ -1,6 +1,5 @@
 :root{
   --bg:#0B1220;
-  --bg2:#0F172A;
   --panel:#111827;
 
   --text:#ffffff;
@@ -8,6 +7,7 @@
 
   --teal:#00BFA6;
   --teal2:#18E0C4;
+
   --orange:#FF7A18;
   --orange2:#FFB454;
 
@@ -17,6 +17,7 @@
 
 *{ box-sizing:border-box; }
 html,body{ height:100%; }
+
 body{
   margin:0;
   font-family:"Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -60,11 +61,13 @@ a{ color:inherit; }
   min-width: 240px;
 }
 
-.brand-mark{
+.brand-image{
   width: 44px;
   height: 44px;
+  border-radius: 12px;
   display:block;
   flex: 0 0 auto;
+  box-shadow: 0 10px 28px rgba(0,0,0,.35);
 }
 
 .brand-text{
@@ -155,9 +158,9 @@ a{ color:inherit; }
   letter-spacing: -0.3px;
 }
 
-.hero p{
+.hero-subhead{
   margin: 0;
-  max-width: 58ch;
+  max-width: 60ch;
   color: var(--muted);
   font-size: 18px;
   line-height: 1.62;
@@ -208,37 +211,6 @@ a{ color:inherit; }
   color: rgba(255,255,255,.65);
 }
 
-/* ===== POWER BADGE ===== */
-.power-badge{
-  display:inline-flex;
-  align-items:center;
-  gap: 10px;
-  margin-top: 14px;
-  padding: 9px 12px;
-  border: 1px solid rgba(255,255,255,.14);
-  border-radius: 999px;
-  background: rgba(0,0,0,.18);
-  font-size: 13px;
-  color: rgba(255,255,255,.90);
-}
-
-.power-dot{
-  width: 10px;
-  height: 10px;
-  border-radius: 999px;
-  background: var(--teal2);
-  box-shadow: 0 0 18px rgba(24,224,196,.55);
-}
-
-.power-sep{
-  opacity: .6;
-}
-
-.power-mini{
-  color: rgba(255,180,84,.95);
-  font-weight: 800;
-}
-
 /* ===== SECTIONS ===== */
 .section{
   padding: 74px 0;
@@ -248,6 +220,12 @@ a{ color:inherit; }
   background: rgba(17,24,39,.55);
   border-top: 1px solid rgba(255,255,255,.06);
   border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.section-head{
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 18px;
 }
 
 .highlight{
@@ -275,7 +253,7 @@ h2{
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 22px;
-  margin-top: 34px;
+  margin-top: 26px;
 }
 
 .card{
@@ -291,6 +269,31 @@ h2{
   font-size: 18px;
 }
 .card p{ margin:0; }
+
+.feature-strip{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 10px;
+  justify-content:center;
+  margin-top: 22px;
+}
+
+.feature-pill{
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.18);
+  border: 1px solid rgba(255,255,255,.12);
+  color: rgba(255,255,255,.86);
+  font-size: 13px;
+}
+
+.cta-row{
+  display:flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin-top: 26px;
+}
 
 /* ===== FOOTER ===== */
 footer{
