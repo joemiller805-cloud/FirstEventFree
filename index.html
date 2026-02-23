@@ -4,71 +4,31 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>FirstEventFree.com — Powered by The Event Phoenix</title>
-  <meta name="description" content="Launch your first event completely free — powered by The Event Phoenix. Unlimited users. Unlimited registrations. No platform fees." />
+  <meta name="description" content="Launch your first event completely free — powered by The Event Phoenix. Unlimited registrations. No platform fees." />
   <meta name="theme-color" content="#0B1220" />
 
-  <!-- SVG FAVICON (Fiery Phoenix “P” — teal + orange) -->
-  <!-- Works in modern browsers immediately without uploading image files. -->
-  <link
-    rel="icon"
-    type="image/svg+xml"
-    href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Cdefs%3E%3ClinearGradient%20id='t'%20x1='0'%20y1='0'%20x2='1'%20y2='1'%3E%3Cstop%20offset='0'%20stop-color='%2318E0C4'/%3E%3Cstop%20offset='1'%20stop-color='%2300BFA6'/%3E%3C/linearGradient%3E%3ClinearGradient%20id='o'%20x1='0'%20y1='0'%20x2='1'%20y2='1'%3E%3Cstop%20offset='0'%20stop-color='%23FFB454'/%3E%3Cstop%20offset='1'%20stop-color='%23FF7A18'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%230B1220'/%3E%3Cpath%20d='M46%206c-6%207-7%2016-1%2024-8-2-13-8-15-14-4%2010-2%2021%207%2028-10-2-17-11-17-22%200-12%208-23%2026-16z'%20fill='url(%23o)'/%3E%3Cpath%20d='M30%2014c-7%200-12%205-12%2012v26h10V40h10c8%200%2014-6%2014-13S46%2014%2038%2014H30zm8%2018H28v-8h10c3%200%206%202%206%204s-3%204-6%204z'%20fill='url(%23t)'/%3E%3C/svg%3E"
-  />
+  <!-- REAL FAVICONS (files you will upload to repo root) -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
- <link rel="stylesheet" href="style.css">
+  <!-- IMPORTANT: your repo file is style.css -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body id="top">
 
   <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="FirstEventFree home">
-        <!-- Dynamic Phoenix “P” (teal + orange) -->
-        <svg class="brand-mark" viewBox="0 0 96 96" width="44" height="44" aria-hidden="true">
-          <defs>
-            <linearGradient id="tealGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#18E0C4"/>
-              <stop offset="1" stop-color="#00BFA6"/>
-            </linearGradient>
-            <linearGradient id="orangeGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#FFB454"/>
-              <stop offset="1" stop-color="#FF7A18"/>
-            </linearGradient>
-            <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-              <feGaussianBlur stdDeviation="2.5" result="blur"/>
-              <feMerge>
-                <feMergeNode in="blur"/>
-                <feMergeNode in="SourceGraphic"/>
-              </feMerge>
-            </filter>
-          </defs>
-
-          <!-- ring swoosh -->
-          <path d="M78 24c10 14 6 33-9 45-16 13-40 12-55-2 17 10 39 6 52-7 12-12 13-28 12-36z"
-                fill="url(#orangeGrad)" opacity=".85"/>
-
-          <!-- flame crown -->
-          <path d="M58 10c-7 8-8 18-1 27-8-3-13-9-16-16-4 11-2 23 9 32-12-2-20-13-20-26 0-15 10-26 28-17z"
-                fill="url(#orangeGrad)" filter="url(#softGlow)"/>
-
-          <!-- P body -->
-          <path d="M42 18c-10 0-18 8-18 18v40h14V56h16c12 0 22-9 22-20S66 18 54 18H42zm12 26H38V32h16c4 0 8 3 8 6s-4 6-8 6z"
-                fill="url(#tealGrad)" filter="url(#softGlow)"/>
-
-          <!-- inner white cut for contrast -->
-          <path d="M54 32H38v12h16c4 0 8-3 8-6s-4-6-8-6z"
-                fill="rgba(255,255,255,.12)"/>
-
-          <!-- teal tail -->
-          <path d="M26 74c6 8 16 12 28 10-10 4-22 2-30-6l2-4z"
-                fill="url(#tealGrad)" opacity=".75"/>
-        </svg>
-
+        <img class="brand-image" src="phoenix-logo.png" alt="Phoenix P logo" />
         <div class="brand-text">
           <div class="brand-title">FirstEventFree<span class="dot">.com</span></div>
           <div class="brand-subtitle">Powered by <strong>The Event Phoenix</strong></div>
@@ -83,66 +43,74 @@
   </header>
 
   <!-- HERO -->
-  <main id="top">
+  <main>
     <section class="hero" id="launch">
       <div class="container hero-grid">
         <div class="hero-left">
           <h1>Your First Event.<br/>Completely Free.</h1>
 
-          <p>
-            Launch a real event using the full power of <strong>The Event Phoenix</strong>.
-            Unlimited users. Unlimited registrations. No platform fees.
+          <p class="hero-subhead">
+            This isn’t a “lite” version. Your first event runs on <strong>The Event Phoenix</strong> —
+            our full event management system. Unlimited registrations. <strong>$0 platform fees.</strong>
           </p>
-
-          <div class="power-badge">
-            <span class="power-dot"></span>
-            Built on <strong>The Event Phoenix</strong>
-            <span class="power-sep">•</span>
-            <span class="power-mini">$0 platform fees</span>
-          </div>
 
           <div class="hero-buttons">
             <a href="#launch" class="btn btn-primary">Launch Your First Event Free</a>
-            <a href="#founders" class="btn btn-secondary">Join the Founders Circle</a>
+            <a href="#phoenix" class="btn btn-secondary">See Full Phoenix Features</a>
           </div>
 
           <div class="trust-row">
+            <span>✓ Built on The Event Phoenix</span>
             <span>✓ Unlimited registrations</span>
             <span>✓ No platform fees</span>
-            <span>✓ Built on Phoenix</span>
           </div>
         </div>
 
         <div class="hero-right">
           <div class="mockup-box">
             <div class="mockup-title">Dashboard Screenshot Here</div>
-            <div class="mockup-sub">Swap this box with a real screenshot when ready.</div>
+            <div class="mockup-sub">Replace with a real screenshot later.</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FEATURES -->
-    <section class="section section-dark">
-      <div class="container center">
-        <h2>Simple. Powerful. Risk-Free.</h2>
-        <p class="muted">
-          Run your first event with professional tools — then upgrade only when you’re ready.
-        </p>
+    <!-- PHOENIX FEATURES -->
+    <section class="section section-dark" id="phoenix">
+      <div class="container">
+        <div class="section-head">
+          <h2>The Event Phoenix Features</h2>
+          <p class="muted">
+            FirstEventFree.com is the “free first event” front door — but the platform is Phoenix.
+            Built for conferences, workshops, and multi-session events.
+          </p>
+        </div>
 
         <div class="grid-3">
           <div class="card">
-            <h3>Registration</h3>
-            <p class="muted">Unlimited registrations with a clean attendee flow.</p>
+            <h3>Registration + Attendees</h3>
+            <p class="muted">Fast registration flows, email confirmations, attendee management.</p>
           </div>
           <div class="card">
-            <h3>Sessions</h3>
-            <p class="muted">Let attendees pick sessions, workshops, tracks, and more.</p>
+            <h3>Sessions + Tracks</h3>
+            <p class="muted">Let attendees select sessions, workshops, breakouts, tracks, and more.</p>
           </div>
           <div class="card">
-            <h3>Surveys</h3>
-            <p class="muted">Collect feedback before, during, and after your event.</p>
+            <h3>Surveys + Feedback</h3>
+            <p class="muted">Collect feedback before, during, and after the event — all in one place.</p>
           </div>
+        </div>
+
+        <div class="feature-strip">
+          <div class="feature-pill">Badge-ready attendee data</div>
+          <div class="feature-pill">Multi-day schedules</div>
+          <div class="feature-pill">Sponsor-ready pages</div>
+          <div class="feature-pill">Mobile-friendly experience</div>
+        </div>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#launch">Launch Free</a>
+          <a class="btn btn-ghost" href="#founders">Join Founders Circle</a>
         </div>
       </div>
     </section>
@@ -152,15 +120,17 @@
       <div class="container center">
         <h2>Join the Founders Circle</h2>
         <p class="muted">
-          Early users get founder perks and influence the roadmap.
+          Early users get founder perks and influence the roadmap for The Event Phoenix.
         </p>
-        <div style="margin-top:18px;">
+        <div class="cta-row center" style="justify-content:center;">
           <a href="#founders" class="btn btn-primary large">Join Founders</a>
+          <a href="#phoenix" class="btn btn-secondary large">See Phoenix Features</a>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <div class="container footer-inner">
       <div>© <span id="year"></span> FirstEventFree.com</div>
@@ -173,4 +143,3 @@
   </script>
 </body>
 </html>
-
