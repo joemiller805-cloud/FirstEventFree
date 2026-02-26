@@ -1,291 +1,386 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>FirstEventFree.com — Powered by The Event Phoenix</title>
-  <meta name="description" content="Launch your first event completely free — powered by The Event Phoenix. Unlimited users. Unlimited registrations. No platform fees." />
-  <meta name="theme-color" content="#0B1220" />
-
-  <!-- Favicons (make sure these files exist in your repo root) -->
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- IMPORTANT: your repo file is style.css -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Event Free — Powered by The Event Phoenix</title>
+  <meta name="description" content="Run your first event completely free on The Event Phoenix platform. Full access — not a limited trial. For experienced planners who know what they need." />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
-<body id="top">
-
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="FirstEventFree home">
-        <img class="brand-image" src="phoenix-logo.png" alt="Phoenix P logo" />
-        <div class="brand-text">
-          <div class="brand-title">FirstEventFree<span class="dot">.com</span></div>
-          <div class="brand-subtitle">Powered by <strong>The Event Phoenix</strong></div>
-        </div>
-      </a>
-
-      <nav class="nav-actions">
-        <a class="btn btn-ghost" href="#founders">Founders Circle</a>
-        <a class="btn btn-primary" href="#launch">Launch Free</a>
-      </nav>
-    </div>
-  </header>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a class="nav__logo" href="/">
+      <img class="nav__logomark" src="phoenix-logo.png" alt="The Event Phoenix logo" />
+      <div class="nav__logo-text">
+        <span class="nav__brand">FirstEventFree.com</span>
+        <span class="nav__powered">Powered by <strong>The Event Phoenix</strong></span>
+      </div>
+    </a>
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#who">Who It's For</a></li>
+      <li><a href="#founders" class="nav__founders">Founders Circle</a></li>
+      <li><a href="#launch" class="nav__cta">Launch Free →</a></li>
+    </ul>
+  </nav>
 
   <!-- HERO -->
-  <main>
-    <section class="hero" id="launch">
-      <div class="container hero-grid">
-        <div class="hero-left">
-          <div class="eyebrow">Powered by <strong>The Event Phoenix</strong></div>
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__grid"></div>
+    </div>
 
-          <h1>Your First Event.<br/>Completely Free.</h1>
+    <div class="hero__content">
+      <div class="hero__invite-badge">
+        <span class="hero__badge-dot"></span>
+        <span>Invitation-only pilot program &middot; Powered by <strong>The Event Phoenix</strong></span>
+      </div>
+      <p class="hero__eyebrow">Your First Event. Completely Free.</p>
+      <h1 class="hero__headline">
+        The full Event Management System. Your first event. <em>On us.</em>
+      </h1>
+      <p class="hero__sub">
+        This isn't a limited trial. You get full access to <strong>The Event Phoenix</strong> — a complete <strong>Event Management System</strong> with online registration, ticket sales, payment gateways, scheduling, check-in &amp; badge scanning, speakers, sponsors, vendors, email tools, and reporting — to run one real event, completely free.
+      </p>
+      <div class="hero__actions">
+        <a href="#launch" class="btn btn--primary btn--lg">Launch Your First Event Free</a>
+        <a href="https://theeventphoenix.com" target="_blank" class="btn btn--outline btn--lg">Explore The Platform</a>
+      </div>
+      <div class="hero__rules">
+        <p class="hero__rules-title">Offer Rules</p>
+        <ul>
+          <li>Your first event is free <strong>only</strong> when you start it from <strong>FirstEventFree.com</strong></li>
+          <li>To claim the offer later, return to this page and launch from here</li>
+          <li>One free event per organization — full access, no feature restrictions</li>
+        </ul>
+      </div>
+      <div class="hero__checks">
+        <span>✓ Unlimited registrations</span>
+        <span>✓ Ticket sales + payment gateways</span>
+        <span>✓ Check-in &amp; badge scanning</span>
+      </div>
+    </div>
 
-          <p class="hero-subhead">
-            This is the full platform — not a limited trial. Build and run a real event using
-            <strong>The Event Phoenix</strong>: online registration, online ticket sales, payment gateways,
-            discount codes, check-in & badge scanning, multi-day scheduling, speakers, sponsors, vendors,
-            email tools, and reporting & analytics.
-          </p>
-
-          <div class="hero-buttons">
-            <a href="#launch" class="btn btn-primary">Launch Your First Event Free</a>
-            <a href="https://theeventphoenix.com" class="btn btn-secondary" target="_blank" rel="noopener">
-              Explore The Event Phoenix Platform
-            </a>
+    <div class="hero__card-wrap">
+      <div class="hero__card">
+        <p class="hero__card-label">What's Included</p>
+        <p class="hero__card-sub">Full access to The Event Phoenix — every feature unlocked.</p>
+        <div class="hero__card-grid">
+          <div class="hero__card-item">
+            <strong>Online Registration</strong>
+            <span>Unlimited types + custom flows</span>
           </div>
+          <div class="hero__card-item">
+            <strong>Ticketing + Payments</strong>
+            <span>Gateways + discount codes</span>
+          </div>
+          <div class="hero__card-item">
+            <strong>Scheduling + Agenda</strong>
+            <span>Multi-day drag-and-drop</span>
+          </div>
+          <div class="hero__card-item">
+            <strong>Check-in + Scanning</strong>
+            <span>Fast onsite from any device</span>
+          </div>
+          <div class="hero__card-item">
+            <strong>Speakers + Expenses</strong>
+            <span>Travel approvals + tracking</span>
+          </div>
+          <div class="hero__card-item">
+            <strong>Vendors + Sponsors</strong>
+            <span>Custom types + management</span>
+          </div>
+        </div>
+        <a href="#launch" class="btn btn--primary btn--full">Launch Free Now →</a>
+        <p class="hero__card-note">No credit card required for your first event.</p>
+      </div>
+    </div>
+  </section>
 
-          <!-- Offer Rules (your “only way to claim” messaging) -->
-          <div class="offer-rules">
-            <div class="offer-title">Offer Rules</div>
-            <ul class="offer-list">
-              <li>Your first event is free <strong>only</strong> when you start it from <strong>FirstEventFree.com</strong>.</li>
-              <li>To claim the offer later, return to this page and launch from here.</li>
+  <!-- HOW IT WORKS -->
+  <section class="how" id="how-it-works">
+    <div class="container">
+      <div class="section-tag">Simple Process</div>
+      <h2>Three steps. One free event.</h2>
+      <div class="how__steps">
+        <div class="how__step">
+          <div class="how__step-num">01</div>
+          <h3>Start from this page</h3>
+          <p>Click "Launch Free" and create your account. The free event offer is only valid when started from FirstEventFree.com — bookmark this page.</p>
+        </div>
+        <div class="how__step-arrow">→</div>
+        <div class="how__step">
+          <div class="how__step-num">02</div>
+          <h3>Build your event</h3>
+          <p>Set up registration, ticketing, scheduling, speakers, sponsors — everything you need. You're working directly inside <strong>The Event Phoenix</strong> — no restrictions, no feature locks.</p>
+        </div>
+        <div class="how__step-arrow">→</div>
+        <div class="how__step">
+          <div class="how__step-num">03</div>
+          <h3>Run it. Then decide.</h3>
+          <p>After your free event, continue with a paid plan — or don't. No pressure. If you love it, the Founders Circle locks you in at $79/mo for life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section class="who" id="who">
+    <div class="container">
+      <div class="who__inner">
+        <div class="who__left">
+          <div class="section-tag">Not For Everyone</div>
+          <h2>This program is for planners who already know what they're doing.</h2>
+          <p>FirstEventFree.com isn't a hand-holding onboarding experience. It's for experienced event professionals who want to evaluate a serious platform by actually using it — not by watching a demo.</p>
+          <p>If you need someone to walk you through every step, we have a <a href="https://theeventphoenix.com/#demo">demo process for that</a>. This program is for the planners who'd rather just build.</p>
+        </div>
+        <div class="who__right">
+          <div class="who__fits">
+            <p class="who__fits-title">✓ This is for you if you run:</p>
+            <ul class="who__list who__list--yes">
+              <li>Conferences and multi-day events</li>
+              <li>Association annual meetings</li>
+              <li>Workshops, trainings &amp; summits</li>
+              <li>Events with sponsors or vendors</li>
+              <li>Events where you need real check-in tools</li>
+              <li>Any event where registration is complex</li>
             </ul>
           </div>
-
-          <div class="trust-row">
-            <span>✓ Unlimited registrations</span>
-            <span>✓ Ticket sales + payment gateways</span>
-            <span>✓ Check-in & badge scanning</span>
-          </div>
-        </div>
-
-        <div class="hero-right">
-          <div class="mockup-box">
-            <div class="mockup-title">Dashboard Screenshot Here</div>
-            <div class="mockup-sub">Replace with a real screenshot later.</div>
-          </div>
-
-          <div class="hero-side-note">
-            <strong>Why this exists:</strong> FirstEventFree is the official entry point for your free first event —
-            built on The Event Phoenix.
+          <div class="who__fits who__fits--no">
+            <p class="who__fits-title">✗ This probably isn't for you if you need:</p>
+            <ul class="who__list who__list--no">
+              <li>Step-by-step hand-holding to get started</li>
+              <li>A simple ticketing page with no backend</li>
+              <li>A free platform forever with no intention to pay</li>
+            </ul>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PHOENIX FEATURES -->
-    <section class="section section-dark" id="phoenix">
-      <div class="container">
-        <div class="section-head">
-          <h2>The Event Phoenix Features</h2>
-          <p class="muted">
-            FirstEventFree.com is the only place to start your first event free — and it runs on the same
-            Event Phoenix system used by real organizers.
-          </p>
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="features__header">
+        <div class="section-tag">Everything Included</div>
+        <h2>Everything in <span style="color:var(--teal)">The Event Phoenix</span><br>Event Management System.</h2>
+        <p>FirstEventFree.com is your entry point to try <strong>The Event Phoenix</strong> at no cost. You'll be building and running your event directly on The Event Phoenix platform — the same one planners pay for every month. Nothing watered down.</p>
+      </div>
+      <div class="features__grid">
+
+        <div class="features__group">
+          <div class="features__group-title">Registration + Ticketing</div>
+          <ul class="features__list">
+            <li><strong>Online registration</strong> — Unlimited types &amp; custom questions</li>
+            <li><strong>Online ticket sales</strong> — Built-in ticketing tools</li>
+            <li><strong>Payment gateways</strong> — Supported gateway integrations</li>
+            <li><strong>Unlimited discount codes</strong> — Promos for any ticket type</li>
+            <li><strong>Multiple attendee add</strong> — Register several at once</li>
+          </ul>
         </div>
 
-        <!-- Big value callouts (your “unlimited” items) -->
-        <div class="highlights">
-          <div class="highlight-card">
-            <div class="highlight-top">Unlimited</div>
-            <div class="highlight-big">Events</div>
-            <div class="highlight-sub">Create unlimited events on the platform.</div>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-top">Unlimited</div>
-            <div class="highlight-big">Users</div>
-            <div class="highlight-sub">Invite staff with roles & security groups.</div>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-top">Unlimited</div>
-            <div class="highlight-big">Registrations</div>
-            <div class="highlight-sub">No platform fees. No growth penalties.</div>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-top">Unlimited</div>
-            <div class="highlight-big">Forms</div>
-            <div class="highlight-sub">Unlimited registration types & questions.</div>
-          </div>
+        <div class="features__group">
+          <div class="features__group-title">Scheduling + Agenda</div>
+          <ul class="features__list">
+            <li><strong>Multi-day scheduling</strong> — Complex tracks, no limits</li>
+            <li><strong>Drag-and-drop builder</strong> — Visual schedule building</li>
+            <li><strong>Speaker management</strong> — Bios, sessions &amp; assignments</li>
+            <li><strong>Unlimited tracks &amp; courses</strong> — Reusable year after year</li>
+            <li><strong>Session capacity alerts</strong> — Know before it fills up</li>
+          </ul>
         </div>
 
-        <!-- Feature grid -->
-        <div class="feature-grid">
-
-          <div class="feature-group">
-            <div class="feature-group-title">Registration + Ticketing</div>
-            <div class="feature-items">
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Online registration</strong><div class="fi-sub">Flexible forms with unlimited registration types & questions.</div></div></div>
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Online ticket sales</strong><div class="fi-sub">Sell tickets online with built-in ticketing tools.</div></div></div>
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Payment gateways</strong><div class="fi-sub">Process payments through supported gateway integrations.</div></div></div>
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Discount codes</strong><div class="fi-sub">Create promotions and discounts for ticket types.</div></div></div>
-            </div>
-          </div>
-
-          <div class="feature-group">
-            <div class="feature-group-title">Onsite + Attendee Experience</div>
-            <div class="feature-items">
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Easy event check-in</strong><div class="fi-sub">Fast onsite check-in for attendees.</div></div></div>
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Badge scanning</strong><div class="fi-sub">Scan badges for check-in, sessions, and tracking.</div></div></div>
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Email attendees</strong><div class="fi-sub">Send updates, reminders, and important announcements.</div></div></div>
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Virtual or pre-recorded events</strong><div class="fi-sub">Support virtual experiences and content-based events.</div></div></div>
-            </div>
-          </div>
-
-          <div class="feature-group">
-            <div class="feature-group-title">Scheduling + Agenda</div>
-            <div class="feature-items">
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Multi-day scheduling</strong><div class="fi-sub">Run multi-day events with complex tracks.</div></div></div>
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Drag & drop schedule</strong><div class="fi-sub">Build schedules visually with drag-and-drop tools.</div></div></div>
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Agenda management</strong><div class="fi-sub">Maintain sessions, rooms, time slots, and conflicts.</div></div></div>
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Speaker management</strong><div class="fi-sub">Manage speakers, bios, sessions, and assignments.</div></div></div>
-            </div>
-          </div>
-
-          <div class="feature-group">
-            <div class="feature-group-title">Sponsors + Vendors + Branding</div>
-            <div class="feature-items">
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Sponsor management & branding</strong><div class="fi-sub">Sponsor packages, benefits, and brand placement.</div></div></div>
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Vendor management</strong><div class="fi-sub">Track vendors, booths, contacts, and requirements.</div></div></div>
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Custom event website builder</strong><div class="fi-sub">Create branded event websites and pages.</div></div></div>
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Staff management + security groups</strong><div class="fi-sub">Role-based access for admins, staff, and teams.</div></div></div>
-            </div>
-          </div>
-
-          <div class="feature-group">
-            <div class="feature-group-title">Operations + Insights</div>
-            <div class="feature-items">
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Reporting & analytics</strong><div class="fi-sub">Understand registrations, revenue, sessions, and more.</div></div></div>
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Inventory management</strong><div class="fi-sub">Track inventory and supplies for your event.</div></div></div>
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Expense management</strong><div class="fi-sub">Track expenses for budgeting and reconciliation.</div></div></div>
-              <div class="feature-item"><span class="fi-dot"></span><div><strong>Unlimited scale</strong><div class="fi-sub">Unlimited users and registrations without platform fees.</div></div></div>
-            </div>
-          </div>
-
+        <div class="features__group">
+          <div class="features__group-title">Onsite + Check-in</div>
+          <ul class="features__list">
+            <li><strong>Easy event check-in</strong> — Fast onsite from any device</li>
+            <li><strong>Badge scanning</strong> — QR codes for check-in &amp; sessions</li>
+            <li><strong>On-demand badge printing</strong> — Print as attendees arrive</li>
+            <li><strong>Real-time dashboard</strong> — Live attendance tracking</li>
+            <li><strong>Email attendees</strong> — Send to any segment, any time</li>
+          </ul>
         </div>
 
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#launch">Launch Free</a>
-          <a class="btn btn-ghost" href="#founders">See Founders Offer</a>
-          <a class="btn btn-secondary" href="https://theeventphoenix.com" target="_blank" rel="noopener">Explore Phoenix</a>
+        <div class="features__group">
+          <div class="features__group-title">Sponsors + Vendors + Ops</div>
+          <ul class="features__list">
+            <li><strong>Sponsor &amp; vendor types</strong> — Build your own categories</li>
+            <li><strong>Expense management</strong> — Speaker travel approvals</li>
+            <li><strong>Inventory management</strong> — Track your event equipment</li>
+            <li><strong>Document management</strong> — File sharing for speakers &amp; vendors</li>
+            <li><strong>Reporting &amp; analytics</strong> — Revenue, registrations &amp; more</li>
+          </ul>
         </div>
 
-        <div class="offer-footer-note">
-          <strong>Reminder:</strong> Your first event is free only when started from <strong>FirstEventFree.com</strong>.
+      </div>
+
+      <div class="features__power">
+        <div class="features__power-icon">✦</div>
+        <div>
+          <p><strong>Plus the features competitors charge thousands for:</strong> Copy event in one click, reusable courses &amp; tracks, session capacity alerts, expense approvals, document management, and inventory tracking — all included.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FOUNDERS CIRCLE -->
-    <section class="section highlight" id="founders">
-      <div class="container">
-        <div class="founders-grid">
-          <div class="founders-left">
-            <h2>Founders Circle</h2>
-
-            <p class="muted">
-              The Founders Circle is our early-access group shaping <strong>The Event Phoenix</strong>.
-              You’ll get priority onboarding and a direct line to the roadmap — and you’ll lock in founder pricing.
-            </p>
-
-            <div class="founders-price">
-              <div class="fp-left">
-                <div class="fp-badge">Founder Pricing</div>
-                <div class="fp-price">$79<span class="fp-mo">/month</span></div>
-                <div class="fp-sub">for life</div>
+  <!-- FOUNDERS CIRCLE -->
+  <section class="founders" id="founders">
+    <div class="container">
+      <div class="founders__inner">
+        <div class="founders__left">
+          <div class="section-tag">After Your Free Event</div>
+          <h2>Love it? Lock in <em>$79/mo</em> for life.</h2>
+          <p>The Founders Circle is our early-access program for planners who want to be part of shaping The Event Phoenix. Join after your free event and lock your rate forever — before we raise prices.</p>
+          <div class="founders__price-card">
+            <div class="founders__price-badge">🔥 Founders Circle</div>
+            <div class="founders__price-row">
+              <span class="founders__amount">$79</span>
+              <span class="founders__per">/mo for life</span>
+            </div>
+            <p class="founders__price-note">Standard pricing is $129/mo. Founders lock in forever.</p>
+          </div>
+          <ul class="founders__perks">
+            <li>✓ Everything in the full platform — forever</li>
+            <li>✓ Rate locked for life, never increases</li>
+            <li>✓ First access to new features</li>
+            <li>✓ Direct line to the founders</li>
+            <li>✓ <strong>Phoenix Engage</strong> mobile app included free at launch (Q3 2026)</li>
+            <li>✓ Founding member recognition</li>
+          </ul>
+          <p class="founders__limit">⚡ Limited to the first 250 members. When they're gone, they're gone.</p>
+        </div>
+        <div class="founders__right">
+          <div class="founders__fit-card">
+            <p class="founders__fit-title">Best fit for:</p>
+            <ul>
+              <li>Conferences and multi-day events</li>
+              <li>Workshops, trainings &amp; summits</li>
+              <li>Events with sponsors or vendors</li>
+              <li>Organizers who want a real platform — not a free toy</li>
+            </ul>
+          </div>
+          <div class="founders__flow-card">
+            <p class="founders__flow-title">The natural path:</p>
+            <div class="founders__flow-steps">
+              <div class="founders__flow-step">
+                <span class="founders__flow-dot founders__flow-dot--active"></span>
+                <span>Start free from <strong>FirstEventFree.com</strong></span>
               </div>
-              <div class="fp-right">
-                <div class="fp-limit"><strong>Limited:</strong> first <strong>250</strong> members</div>
-                <div class="fp-note">Once the first 250 spots are filled, this offer ends.</div>
+              <div class="founders__flow-line"></div>
+              <div class="founders__flow-step">
+                <span class="founders__flow-dot founders__flow-dot--active"></span>
+                <span>Build and run your first event</span>
+              </div>
+              <div class="founders__flow-line"></div>
+              <div class="founders__flow-step">
+                <span class="founders__flow-dot"></span>
+                <span>Join Founders Circle at <strong>$79/mo for life</strong></span>
+              </div>
+              <div class="founders__flow-line"></div>
+              <div class="founders__flow-step">
+                <span class="founders__flow-dot"></span>
+                <span>Get <strong>Phoenix Engage</strong> mobile app free at launch</span>
               </div>
             </div>
-
-            <div class="founders-box">
-              <div class="founders-box-title">What you get:</div>
-              <ul class="founders-list">
-                <li><strong>Priority onboarding</strong> to get your first event launched quickly</li>
-                <li><strong>Priority support</strong> during planning and onsite execution</li>
-                <li><strong>Early access</strong> to new Phoenix features and improvements</li>
-                <li><strong>Roadmap influence</strong> — your requests help shape what we build next</li>
-              </ul>
-            </div>
-
-            <div class="cta-row" style="justify-content:flex-start;">
-              <a href="#launch" class="btn btn-primary large">Launch Free</a>
-              <a href="https://theeventphoenix.com" class="btn btn-secondary large" target="_blank" rel="noopener">
-                Explore Phoenix
-              </a>
-            </div>
-
-            <div class="mini-note">
-              <strong>Tip:</strong> Start your free first event here, then join Founders Circle to lock in $79/month pricing.
-            </div>
           </div>
-
-          <div class="founders-right">
-            <div class="founders-card">
-              <div class="fc-title">Best fit for:</div>
-              <ul class="fc-list">
-                <li>Conferences and multi-day events</li>
-                <li>Workshops, trainings, and summits</li>
-                <li>Events with sponsors/vendors</li>
-                <li>Organizers who want a real platform (not a “free toy”)</li>
-              </ul>
-            </div>
-
-            <div class="founders-card">
-              <div class="fc-title">How the free offer works:</div>
-              <p class="fc-sub">
-                Start your first event from this page. When you’re ready to claim the offer later, return here and launch again.
-              </p>
-              <div class="fc-pill">FirstEventFree.com = official entry point</div>
-            </div>
-
-            <div class="founders-card founders-card-accent">
-              <div class="fc-title">Founder Pricing Reminder</div>
-              <p class="fc-sub">
-                $79/month for life is limited to the first 250 Founders Circle members.
-              </p>
-              <div class="fc-pill">Limited availability</div>
-            </div>
-          </div>
+          <a href="https://theeventphoenix.com/#founders" class="btn btn--founders btn--full">See Founders Circle Details →</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <!-- LAUNCH CTA -->
+  <section class="launch" id="launch">
+    <div class="launch__bg"><div class="launch__orb"></div></div>
+    <div class="container">
+      <p class="launch__eyebrow">Ready to build?</p>
+      <h2>Your first event is waiting.</h2>
+      <p>Click below to create your account and start building. Remember — the free offer only applies when you start from this page.</p>
+      <div class="launch__actions">
+        <!-- Replace YOUR_SIGNUP_URL with your actual app signup/onboarding URL -->
+        <a href="YOUR_SIGNUP_URL" class="btn btn--primary btn--xl">Launch Your First Event Free →</a>
+        <a href="https://theeventphoenix.com/#demo" class="btn btn--ghost btn--xl">Book a Demo Instead</a>
+      </div>
+      <p class="launch__reminder">⚡ <strong>Reminder:</strong> Your first event is free only when started from <strong>FirstEventFree.com</strong>. Bookmark this page.</p>
+    </div>
+  </section>
 
   <!-- FOOTER -->
-  <footer>
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> FirstEventFree.com</div>
-      <div class="footer-muted">Powered by The Event Phoenix</div>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img class="footer__logomark" src="phoenix-logo.png" alt="The Event Phoenix logo" />
+          <div>
+            <p class="footer__brand-name">FirstEventFree.com</p>
+            <p class="footer__brand-tag">Powered by <strong>The Event Phoenix</strong></p>
+          </div>
+        </div>
+        <nav class="footer__nav">
+          <div class="footer__nav-col">
+            <p class="footer__nav-heading">This Site</p>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#features">Features</a>
+            <a href="#who">Who It's For</a>
+            <a href="#founders">Founders Circle</a>
+            <a href="#launch">Launch Free</a>
+          </div>
+          <div class="footer__nav-col">
+            <p class="footer__nav-heading">The Event Phoenix</p>
+            <a href="https://theeventphoenix.com" target="_blank">Main Site</a>
+            <a href="https://theeventphoenix.com/#pricing" target="_blank">Pricing</a>
+            <a href="https://theeventphoenix.com/#demo" target="_blank">Book a Demo</a>
+            <a href="mailto:hello@theeventphoenix.com">Contact</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 FirstEventFree.com — Powered by The Event Phoenix. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    // Nav scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('nav--scrolled', window.scrollY > 40));
+
+    // Mobile hamburger
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('nav__links--open');
+      hamburger.setAttribute('aria-expanded', open);
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('nav__links--open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }));
+
+    // Scroll reveal
+    document.querySelectorAll('.how__step, .features__group, .who__fits, .founders__left, .founders__right')
+      .forEach(el => {
+        el.classList.add('reveal-target');
+        new IntersectionObserver((entries, obs) => {
+          entries.forEach(e => {
+            if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); }
+          });
+        }, { threshold: 0.1 }).observe(el);
+      });
   </script>
 </body>
 </html>
