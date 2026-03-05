@@ -131,7 +131,7 @@
         <div class="how__step">
           <div class="how__step-num">03</div>
           <h3>Run it. Then decide.</h3>
-          <p>After your free event, continue with a paid plan — or don't. No pressure. If you love it, the Founders Circle locks you in at $79/mo for life.</p>
+          <p>After your free event, continue with a paid plan — or don't. No pressure. If you love it, the Founders Circle locks you in at $149/mo for life.</p>
         </div>
       </div>
     </div>
@@ -243,25 +243,69 @@
       <div class="founders__inner">
         <div class="founders__left">
           <div class="section-tag">After Your Free Event</div>
-          <h2>Love it? Lock in <em>$79/mo</em> for life.</h2>
+          <h2>Love it? Lock in <em>$149/mo</em> for life.</h2>
           <p>The Founders Circle is our early-access program for planners who want to be part of shaping The Event Phoenix. Join after your free event and lock your rate forever — before we raise prices.</p>
           <div class="founders__price-card">
             <div class="founders__price-badge">🔥 Founders Circle</div>
             <div class="founders__price-row">
-              <span class="founders__amount">$79</span>
+              <span class="founders__amount">$149</span>
               <span class="founders__per">/mo for life</span>
             </div>
-            <p class="founders__price-note">Standard pricing is $129/mo. Founders lock in forever.</p>
+            <p class="founders__price-note">Regular plans start at $199/mo. Founders lock in $149 forever — no matter how your volume grows.</p>
           </div>
+
+          <!-- Countdown -->
+          <div class="founders__countdown">
+            <div class="founders__countdown-label">Offer closes August 31st — or when 100 spots are filled</div>
+            <div class="founders__countdown-timer">
+              <div class="founders__countdown-unit">
+                <span class="founders__countdown-num" id="fc-days">--</span>
+                <span class="founders__countdown-unit-label">days</span>
+              </div>
+              <span class="founders__countdown-sep">:</span>
+              <div class="founders__countdown-unit">
+                <span class="founders__countdown-num" id="fc-hours">--</span>
+                <span class="founders__countdown-unit-label">hrs</span>
+              </div>
+              <span class="founders__countdown-sep">:</span>
+              <div class="founders__countdown-unit">
+                <span class="founders__countdown-num" id="fc-mins">--</span>
+                <span class="founders__countdown-unit-label">min</span>
+              </div>
+              <span class="founders__countdown-sep">:</span>
+              <div class="founders__countdown-unit">
+                <span class="founders__countdown-num" id="fc-secs">--</span>
+                <span class="founders__countdown-unit-label">sec</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Savings table -->
+          <div class="founders__savings">
+            <p class="founders__savings-title">What you save vs. regular pricing — every year, forever:</p>
+            <table class="founders__savings-table">
+              <thead>
+                <tr><th>If you'd normally be on…</th><th>Save/mo</th><th>Save/yr</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Spark ($199/mo)</td><td>$50</td><td>$600</td></tr>
+                <tr><td>Blaze ($299/mo)</td><td>$150</td><td>$1,800</td></tr>
+                <tr><td>Inferno ($399/mo)</td><td>$250</td><td>$3,000</td></tr>
+                <tr class="founders__savings-highlight"><td>Phoenix ($599/mo)</td><td>$450</td><td><strong>$5,400</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+
           <ul class="founders__perks">
             <li>✓ Everything in the full platform — forever</li>
             <li>✓ Rate locked for life, never increases</li>
-            <li>✓ First access to new features</li>
+            <li>✓ Founding Advisory Access — your feedback moves to the front of the line</li>
+            <li>✓ First access to new features before general release</li>
             <li>✓ Direct line to the founders</li>
             <li>✓ <strong>Phoenix Engage</strong> mobile app included free at launch (Q3 2026)</li>
             <li>✓ Founding member recognition</li>
           </ul>
-          <p class="founders__limit">⚡ Limited to the first 250 members. When they're gone, they're gone.</p>
+          <p class="founders__limit">⚡ First 100 planners or August 31st — whichever comes first.</p>
         </div>
         <div class="founders__right">
           <div class="founders__fit-card">
@@ -288,7 +332,7 @@
               <div class="founders__flow-line"></div>
               <div class="founders__flow-step">
                 <span class="founders__flow-dot"></span>
-                <span>Join Founders Circle at <strong>$79/mo for life</strong></span>
+                <span>Join Founders Circle at <strong>$149/mo for life</strong></span>
               </div>
               <div class="founders__flow-line"></div>
               <div class="founders__flow-step">
@@ -297,7 +341,7 @@
               </div>
             </div>
           </div>
-          <a href="https://theeventphoenix.com/#founders" class="btn btn--founders btn--full">See Founders Circle Details →</a>
+          <a href="https://theeventphoenix.com/#founders" class="btn btn--founders btn--full">Claim Your Founders Spot →</a>
         </div>
       </div>
     </div>
@@ -344,7 +388,7 @@
             <a href="https://theeventphoenix.com" target="_blank">Main Site</a>
             <a href="https://theeventphoenix.com/#pricing" target="_blank">Pricing</a>
             <a href="https://theeventphoenix.com/#demo" target="_blank">Book a Demo</a>
-            <a href="mailto:hello@theeventphoenix.com">Contact</a>
+            <a href="/cdn-cgi/l/email-protection#5a323f3636351a2e323f3f2c3f342e2a32353f34332274393537">Contact</a>
           </div>
         </nav>
       </div>
@@ -354,7 +398,7 @@
     </div>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // Nav scroll
     const nav = document.getElementById('nav');
     window.addEventListener('scroll', () => nav.classList.toggle('nav--scrolled', window.scrollY > 40));
@@ -362,14 +406,31 @@
     // Mobile hamburger
     const hamburger = document.getElementById('hamburger');
     const navLinks  = document.getElementById('navLinks');
-    hamburger.addEventListener('click', () => {
-      const open = navLinks.classList.toggle('nav__links--open');
-      hamburger.setAttribute('aria-expanded', open);
-    });
-    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+
+    const backdrop = document.createElement('div');
+    backdrop.className = 'nav__backdrop';
+    backdrop.id = 'navBackdrop';
+    document.body.appendChild(backdrop);
+
+    function openMenu() {
+      navLinks.classList.add('nav__links--open');
+      backdrop.classList.add('nav__backdrop--open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMenu() {
       navLinks.classList.remove('nav__links--open');
+      backdrop.classList.remove('nav__backdrop--open');
       hamburger.setAttribute('aria-expanded', 'false');
-    }));
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.contains('nav__links--open');
+      isOpen ? closeMenu() : openMenu();
+    });
+    backdrop.addEventListener('click', closeMenu);
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
 
     // Scroll reveal
     document.querySelectorAll('.how__step, .features__group, .who__fits, .founders__left, .founders__right')
@@ -377,10 +438,47 @@
         el.classList.add('reveal-target');
         new IntersectionObserver((entries, obs) => {
           entries.forEach(e => {
-            if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); }
+            if (e.isIntersecting) {
+              e.target.classList.add('reveal-visible');
+              obs.unobserve(e.target);
+            }
           });
-        }, { threshold: 0.1 }).observe(el);
+        }, { threshold: 0.12 }).observe(el);
       });
+
+    // Founders Circle countdown — target: August 31, 2025 11:59 PM
+    (function() {
+      const deadline = new Date('2025-09-01T00:00:00').getTime();
+      function pad(n) { return String(n).padStart(2, '0'); }
+      function tick() {
+        const now  = Date.now();
+        const diff = deadline - now;
+        if (diff <= 0) {
+          ['fc-days','fc-hours','fc-mins','fc-secs'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = '00';
+          });
+          const label = document.querySelector('.founders__countdown-label');
+          if (label) label.textContent = 'Founders Circle is now closed.';
+          return;
+        }
+        const d = Math.floor(diff / 86400000);
+        const h = Math.floor((diff % 86400000) / 3600000);
+        const m = Math.floor((diff % 3600000)  / 60000);
+        const s = Math.floor((diff % 60000)    / 1000);
+        const days  = document.getElementById('fc-days');
+        const hours = document.getElementById('fc-hours');
+        const mins  = document.getElementById('fc-mins');
+        const secs  = document.getElementById('fc-secs');
+        if (days)  days.textContent  = pad(d);
+        if (hours) hours.textContent = pad(h);
+        if (mins)  mins.textContent  = pad(m);
+        if (secs)  secs.textContent  = pad(s);
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
+
   </script>
 </body>
 </html>
