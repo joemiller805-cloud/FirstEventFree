@@ -607,6 +607,7 @@ h3.features__group-title,
 .reveal-target { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .reveal-target:nth-child(2) { transition-delay: 0.1s; }
 .reveal-target:nth-child(3) { transition-delay: 0.2s; }
+.reveal-visible { opacity: 1 !important; transform: translateY(0) !important; }
 .revealed { opacity: 1; transform: translateY(0); }
 
 /* ===== RESPONSIVE ===== */
